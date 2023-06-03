@@ -1,8 +1,19 @@
 <p class="text-l font-bold text-gray-400">Comments</p>
-
-<div *ngFor="let comment of comments" class="flex items-center items-start space-x-4">
+<div *ngFor="let comment of comments" class="flex items-center items-start space-x-4 p-4">
     <img [src]="comment.imgUrl" class="rounded-full h-12 w-12 bg-gray-300" />
-    <div class="bg-gray-100 p-1 rounded-lg">
-        <div class="text-gray-700"> <span class="font-bold">{{comment.name}}</span> &nbsp;{{comment.comment}}</div>
+    <div>
+        <div class="bg-gray-100 p-1 rounded-lg">
+            <div class="text-gray-700"> <span class="font-bold">{{comment.name}}</span> &nbsp;{{comment.comment}}</div>
+        </div>
+        <div class="flex text-xs items-start space-x-8">
+            <p class="text-gray-500">Reply</p>
+            <p class="text-gray-500">5 months ago</p>
+            <p class="text-gray-500">Prorogic logic</p>
+        </div>
     </div>
+</div>
+<div class="flex items-center justify-between space-x-4 p-4">
+    <img src="../../../../../assets/profilePic.png" class="rounded-full h-12 w-12 bg-gray-300" />
+    <input type="text" class="border border-gray-300 px-4 py-2 rounded-md w-full" placeholder="Add a comment">
+    <button class="bg-gray-700 text-white px-4 py-2 rounded-md">Comment</button>
 </div>
