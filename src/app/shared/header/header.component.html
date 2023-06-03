@@ -1,14 +1,24 @@
-<header class="bg-white-800 shadow-md p-4">
+<div class="bg-white-800 shadow-md">
     <nav class="flex items-center justify-end">
-        <a href="/" class="text-xl font-bold">Logo</a>
-        <ul class="flex space-x-4">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">DataHub</a></li>
-            <li><a href="/contact">Plan & Measure</a></li>
-            <li><a href="/contact">Analytics</a></li>
-            <li><a href="/contact">Beneficiaries</a></li>
-            <li><a href="/contact">[ search ]</a></li>
-            <li><a href="/contact">[ icon ]</a></li>
-        </ul>
+        <div class="flex space-x-12">
+            <div>
+                <a routerLink="/" [ngClass]="{'active-link': activeLink === 'home'}" (click)="activeLink = 'home'" class="text-gray-500 headerElements font-semibold">Home</a>
+            </div>
+            <div>
+                <a routerLink="/datahub" [ngClass]="{'active-link': activeLink === 'datahub'}" (click)="activeLink = 'datahub'" class="text-gray-500 headerElements font-semibold">DataHub</a>
+            </div>
+            <div><a routerLink="/plan-measure" [ngClass]="{'active-link': activeLink === 'plan-measure'}" (click)="activeLink ='plan-measure'" class="text-gray-500 headerElements font-semibold">Plan & Measure</a></div>
+            <div><a routerLink="/analytics" [ngClass]="{'active-link': activeLink === 'analytics'}" (click)="activeLink ='analytics'" class="text-gray-500 headerElements font-semibold">Analytics</a></div>
+            <div><a routerLink="/beneficiaries" [ngClass]="{'active-link': activeLink === 'beneficiaries'}" (click)="activeLink ='beneficiaries'" class="text-gray-500 headerElements font-semibold">beneficiaries</a></div>
+            <div class="flex items-center">
+                <div class="relative flex items-center ">
+                    <button class="absolute left-2 text-gray-600 ">
+                      <img class="seachBtn " src="../../../assets/searchLoop.png ">
+                </button>
+                    <input type="text " placeholder="Search " class="pl-10 pr-4 py-1 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ">
+                </div>
+            </div>
+            <div class="flex items-center"> <img class="accountBtn" src="../../../assets/account.png "></div>
+        </div>
     </nav>
-</header>
+</div>

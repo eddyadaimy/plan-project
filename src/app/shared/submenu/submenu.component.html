@@ -1,0 +1,8 @@
+<nav class="flex items-center justify-end">
+    <div class="flex space-x-12">
+
+        <div *ngFor="let page of subMenu">
+            <a [routerLink]="page.routeUrl" [ngClass]="{'active-link': activeLink === page.displayName}" (click)="activeLink =page.displayName" class="text-gray-500 headerElements font-semibold">{{page.displayName}}</a></div>
+    </div>
+
+</nav>

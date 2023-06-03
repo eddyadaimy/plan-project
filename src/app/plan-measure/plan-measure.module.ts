@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { PlanMeasureRoutingModule } from './plan-measure-routing.module';
 import { PlanMeasureComponent } from './plan-measure.component';
+import { SubmenuComponent } from '../shared/submenu/submenu.component';
 
 
 @NgModule({
   declarations: [
-    PlanMeasureComponent
+    PlanMeasureComponent,
+    SubmenuComponent
   ],
   imports: [
     CommonModule,
