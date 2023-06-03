@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CommentsComponent } from './comments/comments.component';
 import { OverviewComponent } from './overview.component';
 import { PlanListComponent } from './plan-list/plan-list.component';
+import { ProjectDashboardComponent } from './project-dashboard/project-dashboard.component';
 
 
 
@@ -10,7 +11,8 @@ import { PlanListComponent } from './plan-list/plan-list.component';
   declarations: [
     OverviewComponent,
     PlanListComponent,
-    CommentsComponent
+    CommentsComponent,
+    ProjectDashboardComponent
   ],
   imports: [
     CommonModule
