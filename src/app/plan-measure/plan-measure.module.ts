@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { PlanMeasureRoutingModule } from './plan-measure-routing.module';
 import { PlanMeasureComponent } from './plan-measure.component';
-import { SubmenuComponent } from '../shared/submenu/submenu.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [
-    PlanMeasureComponent,
-    SubmenuComponent
-  ],
-  imports: [
-    CommonModule,
-    PlanMeasureRoutingModule
-  ]
+    declarations: [
+        PlanMeasureComponent
+    ],
+    imports: [
+        CommonModule,
+        SharedModule,
+        PlanMeasureRoutingModule,
+    ]
 })
 export class PlanMeasureModule { }
