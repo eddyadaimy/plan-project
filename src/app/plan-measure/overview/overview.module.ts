@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OverviewComponent } from './overview/overview.component';
-import { PlanListComponent } from './overview/plan-list/plan-list.component';
-import { CommentsComponent } from './overview/comments/comments.component';
+import { CommentsComponent } from './comments/comments.component';
+import { OverviewComponent } from './overview.component';
+import { PlanListComponent } from './plan-list/plan-list.component';
 
 
 

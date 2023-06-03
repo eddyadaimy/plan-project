@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlanListModel } from './overview.interface';
-import {activities, indicators} from '../../../sampleData'
+import {activities, indicators} from '../../sampleData'
 @Component({
   selector: 'app-overview',
   templateUrl: './overview.component.html',
