@@ -1,0 +1,8 @@
+<p class="text-l font-bold text-gray-400">Comments</p>
+
+<div *ngFor="let comment of comments" class="flex items-center items-start space-x-4">
+    <img [src]="comment.imgUrl" class="rounded-full h-12 w-12 bg-gray-300" />
+    <div class="bg-gray-100 p-1 rounded-lg">
+        <div class="text-gray-700"> <span class="font-bold">{{comment.name}}</span> &nbsp;{{comment.comment}}</div>
+    </div>
+</div>

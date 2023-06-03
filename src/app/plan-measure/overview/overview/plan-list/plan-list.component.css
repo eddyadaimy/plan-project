@@ -1,0 +1,35 @@
+.customColumn1 {
+    width: 50%;
+    padding: 4px;
+}
+
+.customColumn {
+    width: 25%;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.separator {
+    border-bottom: 1px solid #ccc;
+}
+
+.btnWidth {
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    color: white
+}
+
+.red {
+    background-color: #b91f24;
+}
+
+.yellow {
+    background-color: #f59e1d;
+}
+
+.green {
+    background-color: #1fa449;
+}

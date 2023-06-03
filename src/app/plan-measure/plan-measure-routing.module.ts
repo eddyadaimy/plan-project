@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PlanMeasureComponent } from './plan-measure.component';
+import { OverviewComponent } from './overview/overview/overview.component';
 
 const routes: Routes = [
   {
@@ -8,7 +9,7 @@ const routes: Routes = [
     component: PlanMeasureComponent,
     children: [
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
-      // { path: 'overview', component: OverviewComponent },
+      { path: 'overview', component: OverviewComponent },
       // { path: 'logframe', component: LogframeComponent },
       // { path: 'indicators', component: IndicatorsComponent },
       // { path: 'activities', component: ActivitiesComponent },

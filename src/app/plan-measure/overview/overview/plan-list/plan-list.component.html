@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <div class="text-l font-bold text-gray-400">{{planTable?.title}}</div>
+    </div>
+    <div class="flex bg-gray-100 leading-[2.5]">
+        <div class="customColumn1 font-semibold text-gray-500">{{planTable?.subTitle}}</div>
+        <div class="customColumn font-semibold text-gray-500">{{planTable?.displayTextMsg}}</div>
+        <div class="customColumn font-semibold text-gray-500">{{planTable?.displayTextValue}}</div>
+    </div>
+    <div *ngFor="let item of planTable?.ListOfPlans ; let last = last" class="flex leading-[1.5]">
+        <div [ngClass]="{'separator': last === false}" class="customColumn1">{{item.plan}}</div>
+        <div [ngClass]="{'separator': last === false}" class="customColumn">{{item.message}}</div>
+        <div [ngClass]="{'separator': last === false}" class="customColumn">
+            <div [class.btnWidth]="item.value.status !==null" [ngClass]="{'green': item?.value?.status === 'completed',
+             'yellow': item.value.status === 'on',
+             'red': item.value.status === 'off'}
+             ">{{item.value.value}}</div>
+        </div>
+    </div>
+</div>
