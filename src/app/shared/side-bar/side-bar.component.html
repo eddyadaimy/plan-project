@@ -1,13 +1,21 @@
 <div class="roundBar" [ngClass]="{'sidebar': true, 'open': isOpen}">
-    <div class="h-full text-white space-y-14 pt-16">
-        <div class="font-bold pr-2">[x]</div>
-        <div class="flex">
-            <div class="font-bold pr-2">[icon]</div><a href="#">Program</a></div>
-        <div class="flex">
-            <div class="font-bold pr-2">[icon]</div><a href="#">Project</a></div>
-        <div class="flex">
-            <div class="font-bold pr-2">[icon]</div><a href="#">Indicator</a></div>
-        <div class="flex">
-            <div class="font-bold pr-2">[icon]</div><a href="#">Report</a></div>
+    <div class="h-screen text-white space-y-14 pt-16 pl-7">
+        <div class="flex font-bold pr-2" [ngClass]="{'justify-end pr-5': !isOpen } " (click)=toggleSidebar()>[--x--]</div>
+        <div class="flex" [ngClass]="{'justify-end pr-4 ': !isOpen } ">
+            <div class="font-bold pr-2">[icon]</div>
+            <div *ngIf="isOpen">Program</div>
+        </div>
+        <div class="flex" [ngClass]="{'justify-end pr-4 ': !isOpen } ">
+            <div class="font-bold pr-2">[icon]</div>
+            <div *ngIf="isOpen">Project</div>
+        </div>
+        <div class="flex" [ngClass]="{'justify-end pr-4 ': !isOpen } ">
+            <div class="font-bold pr-2">[icon]</div>
+            <div *ngIf="isOpen">Indicator</div>
+        </div>
+        <div class="flex" [ngClass]="{'justify-end pr-4 ': !isOpen } ">
+            <div class="font-bold pr-2">[icon]</div>
+            <div *ngIf="isOpen">Report</div>
+        </div>
     </div>
 </div>
