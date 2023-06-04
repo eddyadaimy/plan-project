@@ -8,8 +8,8 @@ import { subMenuModel } from '../shared/submenu/subMenuModel/subMenu.interface';
 })
 export class PlanMeasureComponent {
 subMenuPages: subMenuModel[] = [
-  { displayName: "Overview",routeUrl:  "/overview"},
-  { displayName: "Logframe",routeUrl:  "/logframe"},
+  { displayName: "Overview",routeUrl:  "overview"},
+  { displayName: "Logframe",routeUrl:  "logframe"},
   { displayName: "Indicators",routeUrl:  "/"},
   { displayName: "ACtivities",routeUrl:  "/"},
   { displayName: "File Storage",routeUrl:  "/"},
