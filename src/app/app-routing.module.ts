@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', loadChildren: () => import('./plan-measure/plan-measure.module').then(m => m.PlanMeasureModule) },
   { path: 'plan-measure', loadChildren: () => import('./plan-measure/plan-measure.module').then(m => m.PlanMeasureModule) }
   // { path: 'home', loadChildren: () => import('./home.module').then(m => m.HomeModule) },
   // { path: 'datahub', loadChildren: () => import('./datahub.module').then(m => m.DatahubModule) },

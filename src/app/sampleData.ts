@@ -39,5 +39,8 @@ let activities =
   {name:'sample', value:'data'},
 ]
 
-  export { activities, indicators,comments, dashboardData }
+let logFrameData = [
+{ }
+]
+  export { activities, indicators,comments, dashboardData,logFrameData }
 
