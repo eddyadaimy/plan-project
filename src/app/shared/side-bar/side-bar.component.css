@@ -9,3 +9,7 @@
 .open {
     transform: translateX(0);
 }
+
+.roundBar {
+    border-top-right-radius: 50px;
+}
