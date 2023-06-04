@@ -1,10 +1,27 @@
-<div class="h-full flex flex-col">
+<div class="flex flex-col h-full parrentWidth">
     <div class="flex justify-center">
-        <img class="imgChef" src="../../../../assets/chef.png">
+        <img src="../../../../assets/chef.png" class="object-contain h-full imgChef">
     </div>
 
-    <div class="flex-grow bg-blue-100">
-        <div class="flex flex-wrap h-full">
-
+    <div class="bg-blue-100 rounded-lg p-7 space-y-4 ">
+        <div class="flex justify-between text-gray-500 font-semibold ">
+            <div>Progress</div>
+            <div>{{progressPercentage}}%</div>
+        </div>
+        <div class="bg-white h-5 rounded-full ">
+            <div [style.width.%]="progressPercentage " class="bg-orange-500 h-full rounded-full "></div>
+        </div>
+        <div *ngFor="let items of dummyData" class="flex justify-between text-gray-500 font-semibold border-b border-white w-full">
+            <div>{{items.name}}</div>
+            <div> {{items.value}}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <div *ngFor="let items of dummyData" class="flex text-gray-500 font-semibold">
+                <img src="../../../../assets/profilePic.png" class="w-12 h-12 rounded-full">
+                <div class="pl-3">
+                    Name username
+                </div>
+            </div>
         </div>
     </div>
+</div>

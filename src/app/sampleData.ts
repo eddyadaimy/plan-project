@@ -31,6 +31,13 @@ let activities =
     imgUrl:'../../../../../assets/profilePic.png',
     comment:'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
   },
- ]
-  export { activities, indicators,comments }
+ ];
+
+ let dashboardData = [
+  {name:'sample', value:'data'},
+  {name:'sample', value:'data'},
+  {name:'sample', value:'data'},
+]
+
+  export { activities, indicators,comments, dashboardData }
 
