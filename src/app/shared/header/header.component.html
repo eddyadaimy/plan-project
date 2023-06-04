@@ -1,15 +1,7 @@
 <div class="bg-white-800 shadow-md">
     <nav class="flex flex-wrap items-center justify-end">
         <div class="flex flex-wrap space-x-12">
-            <div>
-                <a routerLink="/" [ngClass]="{'active-link': activeLink === 'home'}" (click)="activeLink = 'home'" class="text-gray-500 headerElements font-semibold">Home</a>
-            </div>
-            <div>
-                <a routerLink="/" [ngClass]="{'active-link': activeLink === 'datahub'}" (click)="activeLink = 'datahub'" class="text-gray-500 headerElements font-semibold">DataHub</a>
-            </div>
-            <div><a routerLink="/plan-measure" [ngClass]="{'active-link': activeLink === 'plan-measure'}" (click)="activeLink ='plan-measure'" class="text-gray-500 headerElements font-semibold">Plan & Measure</a></div>
-            <div><a routerLink="/" [ngClass]="{'active-link': activeLink === 'analytics'}" (click)="activeLink ='analytics'" class="text-gray-500 headerElements font-semibold">Analytics</a></div>
-            <div><a routerLink="/" [ngClass]="{'active-link': activeLink === 'beneficiaries'}" (click)="activeLink ='beneficiaries'" class="text-gray-500 headerElements font-semibold">beneficiaries</a></div>
+            <app-submenu [subMenu]="headerMenu" [activeLink]="activeLink" spaceValue="12"></app-submenu>
             <div class="flex items-center">
                 <div class="relative flex items-center ">
                     <button class="absolute left-2 text-gray-600 ">

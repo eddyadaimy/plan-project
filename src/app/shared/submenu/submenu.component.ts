@@ -8,5 +8,6 @@ import { subMenuModel } from './subMenuModel/subMenu.interface';
 })
 export class SubmenuComponent {
 @Input() subMenu : subMenuModel[] = [];
-activeLink:string = '';
+@Input() activeLink:string = '';
+@Input() spaceValue:string = '';
 }

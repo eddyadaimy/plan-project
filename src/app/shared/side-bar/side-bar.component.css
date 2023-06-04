@@ -1,0 +1,11 @@
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #3b59a7;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.open {
+    transform: translateX(0);
+}

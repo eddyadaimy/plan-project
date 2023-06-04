@@ -6,19 +6,21 @@ import { HeaderComponent } from './shared/header/header.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { BreadcrumbModule } from 'params-xng-breadcrumb';
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule,
-    AppRoutingModule,
-    BreadcrumbModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        RouterModule,
+        AppRoutingModule,
+        BreadcrumbModule,
+        SharedModule
+    ]
 })
 export class AppModule { }
