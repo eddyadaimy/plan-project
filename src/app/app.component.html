@@ -1,2 +1,11 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<div class="flex-col">
+    <app-header></app-header>
+    <div class="flex">
+        <div>
+            <app-side-bar></app-side-bar>
+        </div>
+        <div class="flex-grow">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
