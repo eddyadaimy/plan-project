@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PlanMeasureComponent } from './plan-measure.component';
 import { OverviewComponent } from './overview/overview.component';
+import { LogframeComponent } from './logframe/logframe.component';
 
 const routes: Routes = [
   {
@@ -10,13 +11,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
       { path: 'overview', component: OverviewComponent },
-      // { path: 'logframe', component: LogframeComponent },
-      // { path: 'indicators', component: IndicatorsComponent },
-      // { path: 'activities', component: ActivitiesComponent },
-      // { path: 'full-storage', component: FullStorageComponent },
-      // { path: 'reports', component: ReportsComponent },
-      // { path: 'monitoring-visits', component: MonitoringVisitsComponent },
-      // { path: 'settings', component: SettingsComponent },
+      { path: 'logframe', component: LogframeComponent },
     ],
   },
 ];

@@ -6,11 +6,13 @@ import { PlanMeasureComponent } from './plan-measure.component';
 import { SharedModule } from '../shared/shared.module';
 import { BreadcrumbModule } from 'params-xng-breadcrumb';
 import { OverviewModule } from './overview/overview.module';
+import { LogframeComponent } from './logframe/logframe.component';
 
 
 @NgModule({
     declarations: [
-        PlanMeasureComponent
+        PlanMeasureComponent,
+        LogframeComponent
     ],
     imports: [
         CommonModule,

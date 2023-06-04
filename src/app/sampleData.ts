@@ -40,7 +40,15 @@ let activities =
 ]
 
 let logFrameData = [
-{ }
+{ impact:'Impact Message',
+  outcomes:[
+    {outcome:'1 Outcome Message', indicators:[]},
+    {outcome:'2 Outcome Message', indicators:[
+      {indicator:'1 indicator', activities:[{activity:'1 activity'}]},
+      {indicator:'2 indicator', activities:[{activity:'2 activity'}]}
+    ]},
+  ]
+}
 ]
   export { activities, indicators,comments, dashboardData,logFrameData }
 

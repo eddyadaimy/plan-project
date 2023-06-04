@@ -1,0 +1,39 @@
+<div class="h-full">
+    <div *ngFor="let impact of impactData" class="ml-4">
+        <h2 class="text-lg font-bold">{{ impact.impact }}</h2>
+        <div *ngFor="let outcome of impact.outcomes; let i = index">
+            <div class="flex items-center space-x-2">
+                <div [ngClass]="{'bg-gray-100 p-4 rounded-md shadow-md': i % 2 === 0}" class="flex-grow font-bold">
+                    {{ outcome.outcome }}
+                </div>
+                <div>
+                    <span class="text-gray-500">+</span>
+                </div>
+            </div>
+            <ul class="pl-10">
+                <li *ngFor="let indicator of outcome.indicators; let j = index">
+                    <div class="flex items-center space-x-2">
+                        <div [ngClass]="{'bg-gray-200 p-4 rounded-md shadow-md': j % 2 === 0}" class="flex-grow">
+                            {{ indicator.indicator }}
+                        </div>
+                        <div>
+                            <span class="text-gray-500">+</span>
+                        </div>
+                    </div>
+                    <ul class="pl-10">
+                        <li *ngFor="let activity of indicator.activities; let k = index">
+                            <div class="flex items-center space-x-2">
+                                <div [ngClass]="{'bg-gray-100 p-4 rounded-md shadow-md': k % 2 === 0}" class="flex-grow dark:bg-gray-100">
+                                    {{ activity.activity }}
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">+</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
