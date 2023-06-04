@@ -3,12 +3,12 @@
         <img src="../../../../assets/chef.png" class="object-contain h-full imgChef">
     </div>
 
-    <div class="bg-blue-100 rounded-lg p-7 space-y-4 ">
+    <div class="bg-blue-100 rounded-lg p-7 space-y-4">
         <div class="flex justify-between text-gray-500 font-semibold ">
             <div>Progress</div>
             <div>{{progressPercentage}}%</div>
         </div>
-        <div class="bg-white h-5 rounded-full ">
+        <div class="bg-white h-5 rounded-full">
             <div [style.width.%]="progressPercentage " class="bg-orange-500 h-full rounded-full "></div>
         </div>
         <div *ngFor="let items of dummyData" class="flex justify-between text-gray-500 font-semibold border-b border-white w-full">
