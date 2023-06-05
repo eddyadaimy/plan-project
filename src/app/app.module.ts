@@ -7,11 +7,13 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { BreadcrumbModule } from 'params-xng-breadcrumb';
 import { SharedModule } from "./shared/shared.module";
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
+        SideBarComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
