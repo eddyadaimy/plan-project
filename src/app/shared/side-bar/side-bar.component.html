@@ -1,6 +1,6 @@
 <div class="h-screen roundBar" [ngClass]="{'sidebar': true, 'open': isOpen}">
     <div class=" text-white space-y-14 pt-16 pl-7">
-        <div class="flex font-bold pr-2" [ngClass]="{'justify-end pr-5': !isOpen } " (click)=toggleSidebar()>[--x--]</div>
+        <div class="flex font-bold pr-2 cursor-pointer" [ngClass]="{'justify-end pr-5': !isOpen } " (click)=toggleSidebar()>[--x--]</div>
         <div class="flex" [ngClass]="{'justify-end pr-4 ': !isOpen } ">
             <div class="font-bold pr-2">[icon]</div>
             <div *ngIf="isOpen">Program</div>
