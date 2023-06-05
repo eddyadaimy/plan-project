@@ -1,3 +1,8 @@
 .cardWidthSize {
     width: 400px;
 }
+
+.planContainer {
+    overflow-y: scroll;
+    height: 600px;
+}
