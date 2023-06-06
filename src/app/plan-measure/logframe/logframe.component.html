@@ -13,7 +13,7 @@ Mock Button
                     <div class="bg-customBlue text-white text-md font-semibold rounded-l-lg p-3">Impact</div>
                     <div class="bg-white text-md shadow-md flex items-center p-3 font-semibold">{{ impact.impact }}</div>
                 </div>
-                <div class="text-customBlue text-4xl font-semibold mousePointer" (click)="addOutcome(e)"> + </div>
+                <div class="text-customBlue text-4xl font-semibold mousePointer" (click)="addOutcome(impact)"> + </div>
                 <div class="text-gray-400 pr-4"> edit </div>
             </div>
         </div>
@@ -69,4 +69,4 @@ Mock Button
     </div>
 </div>
 
-<app-logframe-modal *ngIf="isModalOpen" [isModalOpen]="isModalOpen" [title]="title" (closeModalEvent)="modalToggle($event)"></app-logframe-modal>
+<app-logframe-modal *ngIf="isModalOpen" [isModalOpen]="isModalOpen" [title]="title" (sendDataToLogFrameEvent)="create($event)" (closeModalEvent)="modalToggle($event)"></app-logframe-modal>

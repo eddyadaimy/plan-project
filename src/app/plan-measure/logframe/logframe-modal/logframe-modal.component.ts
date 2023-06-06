@@ -44,7 +44,8 @@ export class LogframeModalComponent implements OnInit {
 
   create(){
     if (this.myForm.valid) {
-      this.sendDataToLogFrameEvent.emit(this.myForm.get('name')?.value)
+      this.sendDataToLogFrameEvent.emit(this.myForm.get('name')?.value);
+      this.closeModal();
     } else {
       alert('Please fill the name field.');
     }
