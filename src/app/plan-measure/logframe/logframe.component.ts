@@ -27,8 +27,12 @@ interface Impact {
 export class LogframeComponent {
 
   impactData: Impact[] = logFrameData;
+  isModalOpen:boolean = false;
+  title:string = ""
 
   addOutcome(index:number): void {
+    this.isModalOpen= true;
+    this.title= "Outcome"
     const newOutcome: Outcome = {
       outcome: 'New Outcome Message',
       indicators: []
@@ -50,4 +54,9 @@ export class LogframeComponent {
     };
     indicator.activities.push(newActivity);
   }
+
+  modalToggle($event:boolean){
+    this.isModalOpen = $event;
+  }
+
 }

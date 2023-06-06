@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     component: PlanMeasureComponent,
     children: [
-      { path: '', redirectTo: 'overview', pathMatch: 'full' },
+      // { path: '', redirectTo: 'overview', pathMatch: 'full' },
       { path: 'overview', component: OverviewComponent },
       { path: 'logframe', component: LogframeComponent },
     ],
