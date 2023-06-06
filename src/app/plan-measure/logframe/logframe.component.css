@@ -2,7 +2,11 @@
     width: 400px;
 }
 
+.mousePointer {
+    cursor: pointer
+}
+
 .planContainer {
     overflow-y: scroll;
-    height: 600px;
+    height: 80vh;
 }

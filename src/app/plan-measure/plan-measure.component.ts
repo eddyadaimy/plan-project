@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { subMenuModel } from '../shared/submenu/subMenuModel/subMenu.interface';
 
 @Component({
@@ -6,7 +6,8 @@ import { subMenuModel } from '../shared/submenu/subMenuModel/subMenu.interface';
   templateUrl: './plan-measure.component.html',
   styleUrls: ['./plan-measure.component.css']
 })
-export class PlanMeasureComponent {
+export class PlanMeasureComponent implements OnInit {
+  currentPage: string ='Overview';
 subMenuPages: subMenuModel[] = [
   { displayName: "Overview",routeUrl:  "overview"},
   { displayName: "Logframe",routeUrl:  "logframe"},
@@ -17,4 +18,14 @@ subMenuPages: subMenuModel[] = [
   { displayName: "Monitoring Visits",routeUrl:  "/"},
   { displayName: "Settings",routeUrl:  "/"}
 ]
+
+constructor(){
+
+}
+  ngOnInit() {
+    this.currentPage = sessionStorage.getItem('pageLink') || 'Overview';
+  }
+
+
+
 }

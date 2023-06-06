@@ -1,7 +1,7 @@
 <div class="flex flex-grow items-center justify-end">
     <div class="flex" [ngClass]='spaceValue'>
         <div *ngFor="let page of subMenu" class="w-full md:w-auto">
-            <a [routerLink]="page.routeUrl" [ngClass]="{'active-link': activeLink === page.displayName}" (click)="activeLink = page.displayName" class="text-gray-500 headerElements font-semibold">{{ page.displayName }}</a>
+            <a [routerLink]="page.routeUrl" [ngClass]="{'active-link': activeLink === page.displayName}" (click)="setCurrentLink(page.displayName)" class="text-gray-500 headerElements font-semibold">{{ page.displayName }}</a>
         </div>
     </div>
 </div>

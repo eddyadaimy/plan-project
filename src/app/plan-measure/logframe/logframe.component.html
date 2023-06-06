@@ -1,4 +1,4 @@
-<div class="h-screen planContainer">
+<div class="h-full planContainer">
     <div *ngFor="let impact of impactData let e = index  let impactEven = even">
         <div class="rounded-md border-b border-gray-300">
             <div class="flex w-full items-center justify-between">
@@ -6,7 +6,7 @@
                     <div class="bg-customBlue text-white text-md font-semibold rounded-l-lg p-3">Impact</div>
                     <div class="bg-white text-md shadow-md flex items-center p-3 font-semibold">{{ impact.impact }}</div>
                 </div>
-                <div class="text-customBlue text-4xl font-semibold" (click)="addOutcome(e)"> + </div>
+                <div class="text-customBlue text-4xl font-semibold mousePointer" (click)="addOutcome(e)"> + </div>
                 <div class="text-gray-400 pr-4"> edit </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                         </div>
 
                     </div>
-                    <div class="text-customBlue text-4xl font-semibold" (click)="addIndicator(outcome)"> + </div>
+                    <div class="text-customBlue text-4xl font-semibold mousePointer" (click)="addIndicator(outcome)"> + </div>
                     <div class="text-gray-400 pr-4"> edit </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                                 </div>
 
                             </div>
-                            <div class="text-customBlue text-4xl font-semibold" (click)="addActivity(indicator)"> + </div>
+                            <div class="text-customBlue text-4xl font-semibold mousePointer" (click)="addActivity(indicator)"> + </div>
                             <div class="text-gray-400 pr-4"> edit </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                             <div class="bg-white text-md shadow-md flex items-center p-3 font-semibold">{{ activity.activity }}</div>
                                         </div>
                                     </div>
-                                    <div class="text-customBlue text-4xl font-semibold"> + </div>
+                                    <div class="text-customBlue text-4xl font-semibold mousePointer"> + </div>
                                     <div class="text-gray-400 pr-4"> edit </div>
                                 </div>
                             </div>

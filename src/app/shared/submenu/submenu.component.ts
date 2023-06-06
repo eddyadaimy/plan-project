@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { subMenuModel } from './subMenuModel/subMenu.interface';
 
 @Component({
@@ -6,8 +6,15 @@ import { subMenuModel } from './subMenuModel/subMenu.interface';
   templateUrl: './submenu.component.html',
   styleUrls: ['./submenu.component.css']
 })
-export class SubmenuComponent {
+export class SubmenuComponent{
+
 @Input() subMenu : subMenuModel[] = [];
 @Input() activeLink:string = '';
 @Input() spaceValue:string = '';
+
+setCurrentLink(pageName:string){
+  this.activeLink  = pageName;
+  sessionStorage.setItem('pageLink',this.activeLink);
+}
+
 }

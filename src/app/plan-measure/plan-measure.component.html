@@ -4,7 +4,7 @@
         <h1 class="text-xl font-bold text-gray-600">Malnutrition Program</h1>
     </div>
     <div class="shadowBtm">
-        <app-submenu [subMenu]="subMenuPages" spaceValue='space-x-5' activeLink="Overview"></app-submenu>
+        <app-submenu [subMenu]="subMenuPages" spaceValue='space-x-5' [activeLink]='currentPage'></app-submenu>
     </div>
 </div>
 <router-outlet></router-outlet>
