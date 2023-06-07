@@ -1,23 +1,6 @@
 import { Component } from '@angular/core';
 import { logFrameData } from 'src/app/sampleData';
-interface Activity {
-  activity: string;
-}
-
-interface Indicator {
-  indicator: string;
-  activities: Activity[];
-}
-
-interface Outcome {
-  outcome: string;
-  indicators: Indicator[];
-}
-
-interface Impact {
-  impact: string;
-  outcomes: Outcome[];
-}
+import { Impact, Outcome, Indicator, Activity } from './model/logframeModel.interface';
 
 @Component({
   selector: 'app-logframe',
