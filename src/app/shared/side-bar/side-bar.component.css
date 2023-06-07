@@ -1,14 +1,19 @@
 .sidebar {
-    width: 200px;
     background-color: #3b59a7;
+    transition: width 2s ease;
+    /*
     transform: translateX(-70%);
-    transition: transform 0.3s ease;
-}
-
-.open {
-    transform: translateX(0);
+    transition: transform 0.3s ease;*/
 }
 
 .roundBar {
     border-top-right-radius: 50px;
+}
+
+.setSideBarWidth {
+    width: 200px;
+}
+
+.removeSideBarWidth {
+    width: 70px;
 }
